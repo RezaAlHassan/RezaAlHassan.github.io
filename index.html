@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reenie+Beanie">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Portfolio</title>
+</head>
+<body >
+    <br>
+    <nav class="navbar navbar-expand-xxl rounded" >
+        <div class="container-fluid">
+            <span class="logo-picture" > <img src="/images/logo2.png" alt="" width="40" height="40"></span>
+             <span  class="logo-text " > Reza AL Hassan </span>
+  
+          <div class="collapse navbar-collapse justify-content-md-around" id="navbarsExample10">
+                <div class="nav">
+                  <a id="link-active" class="nav-item nav-link active px-3 mx-3 rounded-0" href="#">home</a>
+               
+                  <a id="link-one" class="hvr-underline-from-center nav-item nav-link dark-mode-text" href="#">projects</a>
+                  <a id="link-two" class="nav-item nav-link dark-mode-text" href="#">design</a>
+                  <a id="link-three" class="nav-item nav-link dark-mode-text" href="#">about</a>  
+            
+            </div>   
+            </div>
+            
+            <button class="theme-toggle" id="theme-toggle" onclick="myFunction()" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+              <img class="theme-pic" id="theme-pic" src="/images/tc1.png" alt="" width="35" height="15">
+              <span id="theme-text" class="theme-text dark-mode-text " id="theme-text" >dark</span>
+            </button>
+
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container mh-50 cont-pos ">
+      <div class="row mh-50 ">
+        <div class="col-7">
+         <span class="title-main">WEB (dev x designer)</span>
+       
+       <div class="row">
+         <div class="col-10">
+         <p class="content-text">I’m Reza, an all round creative developer who can design and develop web applications that are modern and trendy.  Lets collaborate and achieve greatness together! </p>
+        </div>
+       </div>
+<br><br>
+       <div class="row">
+        <div class="col-10">
+          <div class="inquiries-box">
+          <span class="inquiries-text">For Inquiries :  </span>
+           <img id="tl" class="inquiries-img" src="/images/telegram_dt.png" alt="" width="35" height="35">
+           <img id="wh" class="inquiries-img" src="/images/whatsapp_dark_theme.png" alt="" width="35" height="35">
+           <img id="ln" class="inquiries-img" src="/images/ln_dt.png" alt="" width="35" height="35">
+           <img id="gl" class="inquiries-img" src="/images/gle_dt.png" alt="" width="35" height="35">
+          </div>
+       </div>
+      </div>
+
+        </div>
+        <div class="col-5">
+          picture
+        </div>
+      </div>
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+  //nav
+  var x = document.getElementById("theme-text");
+  var y = document.getElementById('theme-pic');
+  var z = document.body;
+  var li_one = document.getElementById('link-one');
+  var li_two = document.getElementById('link-two');
+  var li_three = document.getElementById('link-three');
+  //var li_active = document.getElementById('link-active');
+  var li_active = document.getElementById('link-active');
+  var theme_text = document.getElementById('theme-text');
+
+  //body
+  var tl = document.getElementById("tl");
+  var wh = document.getElementById('wh');
+  var ln = document.getElementById('ln');
+  var gl = document.getElementById('gl');
+
+  //change toggler
+  if (x.innerHTML === "dark" && 
+  y.src.match("/images/tc1.png") &&
+  tl.src.match("/images/telegram_dt.png") &&
+  wh.src.match("/images/whatsapp_dark_theme") &&
+  ln.src.match("/images/ln_dt.png") &&
+  gl.src.match("/images/gle_dt.png")  
+  ) {
+    x.innerHTML = "light";
+    y.src="/images/tc2.png";
+    z.classList="light-mode";
+    li_one.classList.toggle("light-mode-text");
+    li_two.classList.toggle("light-mode-text");
+    li_three.classList.toggle("light-mode-text");
+    theme_text.classList.toggle("light-mode-text");
+    //li_active.classList.toggle("light-mode-active");
+    li_active.classList.remove('active');
+    li_active.classList.add('light-mode-active');
+    tl.src="/images/telegram_white_theme.png";
+    wh.src="/images/WhatsApp_wt.png";
+    ln.src="/images/LinkedIN_wt.png";
+    gl.src="/images/Google_wt.png";
+
+  } else {
+    x.innerHTML = "dark";
+    y.src="/images/tc1.png";
+    z.classList="light-mode";
+    tl.src="/images/telegram_dt.png";
+    wh.src="/images/whatsapp_dark_theme";
+    ln.src="/images/ln_dt.png" ;
+    gl.src="/images/gle_dt.png";
+  }
+  
+}  
+</script>
+</body>
+</html>
