@@ -7,30 +7,18 @@ body {
 .light-mode {
     background-color: white;
     color:#1e1e1e;
-  }
-    
-.dark-mode {
-    background-color: #1e1e1e;
-    color:white;
+  
   }
 
 a{
     text-decoration:none;
   }
   
-.dark-mode-text {
-    color:white;
-  }
-
 .light-mode-active {
     background-color: #1e1e1e;
     color:white;
     box-sizing:border-box;
     font-size: 30px;
-  }
-
-.light-mode-text {
-    color:rgb(0, 0, 0);
   }
 
   /* Nav */
@@ -46,10 +34,10 @@ a{
     letter-spacing: -0.15em;
     font-size: 30px;
     line-height: 32px;
+    text-decoration:none;
 }
 .nav-link:hover{
  color: rgb(235, 163, 8);
-
 }
 
 #link-active:hover{
@@ -81,6 +69,7 @@ margin-right: 0.5em;
     block-size: var(--size);
     aspect-ratio: 1;
     border-radius: 50%;
+    
   }
 
   .theme-toggle{
@@ -91,6 +80,7 @@ margin-right: 0.5em;
   .theme-text{
     font-family: "OCR A Extended";
     letter-spacing: -0.15em;
+    color: white;
   }
 
 
@@ -103,7 +93,7 @@ margin-right: 0.5em;
   }
   
   .content-text{
-    font-family: "IBM Plex Mono";
+    font-family: "OCR A Extended";
     font-size: 30px;
     letter-spacing: -0.15em;
     padding-top: 2em;
