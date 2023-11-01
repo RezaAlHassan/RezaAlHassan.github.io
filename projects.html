@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="project-styles.css">
+<link href="https://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Reenie+Beanie">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="project-styles.css">
+<title>Portfolio</title>
+</head>
+<body >
+    <br>
+    <nav class="navbar navbar-expand-xxl rounded" >
+        <div class="container-fluid">
+            <span class="logo-picture" > <img src="/images/logo2.png" alt="" width="40" height="40"></span>
+             <span  class="logo-text" > Reza AL Hassan </span>
+  
+          <div class="collapse navbar-collapse justify-content-md-around" id="navbarsExample10">
+                <div class="d-flex flex-row mb-3">
+                  <a  class="hvr-underline-from-center nav-link mx-2  " href="#">home</a>
+                  <a id="link-active" class="nav-link active px-2 mx-2 rounded-0 " href="#">projects</a>
+                  <a class=" nav-link mx-3" href="#">design</a>
+                  <a class=" nav-link mx-2 " href="#">about</a>  
+            
+            </div>   
+            </div>
+            
+            <button class="theme-toggle" id="theme-toggle" onclick="bodyThemeChange(); activeLinkThemeChange(); changeThemeText(); changeThemePic(); titleThemeChange();" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+              <img class="theme-pic" id="theme-pic" src="/images/tc1.png" alt="" width="35" height="15">
+              <span class="theme-text" id="theme-text" >dark</span>
+            </button>
+
+          </div>
+        </div>
+      </nav>
+      
+      <div class="container mh-50 cont-pos ">
+      <div class="row mh-50 ">
+        <div class="col-7">
+         <span class="title-main">projects (fullstack)</span>
+       
+       <div class="row">
+         <div class="col-10">
+            <div class="project-details">
+            <a href="#" class="pro-title project-title-dark">AQM: Air Quality Monitoring</a>
+            <p class="project-text">An air quality monitoring software that uses everyday air quality data (stored in database), 
+                computes it and shows it in user friendly charts and a dashboard.  </p>
+            </div>
+
+            <div class="project-details">
+                <a href="#" class="pro-title project-title-dark">Artroot</a>
+                <p class="project-text">A fully customised platform for artists where they can showcase their art and interact with potential buyers, 
+                    with accounts for different user types. Constructed implenting a rigorous authentication system.  </p>
+            </div>
+        </div>
+       </div>
+<br><br>
+       <div class="row">
+        <div class="col-10">
+
+       </div>
+      </div>
+
+        </div>
+        
+        <div class="col-5">
+//images for
+          
+        </div>
+
+      </div>
+      </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script>
+function bodyThemeChange() {
+
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
+
+function titleThemeChange() {
+  var li_active = document.getElementsByClassName('pro-title');
+  if (li_active.classList.contains("project-title-dark")) {
+    li_active.classList.remove("project-title-dark");
+    li_active.classList.add("project-title-white");
+} else {
+   li_active.classList.add("project-title-dark");
+   li_active.classList.remove("project-title-white");
+} 
+}
+
+function activeLinkThemeChange() {
+  var li_active = document.getElementById('link-active');
+  if (li_active.classList.contains("active")) {
+    li_active.classList.remove("active");
+    li_active.classList.add("light-mode-active");
+} else {
+   li_active.classList.add("active");
+   li_active.classList.remove("light-mode-active");
+} 
+}
+
+function changeThemeText() {
+  var x = document.getElementById("theme-text");
+  if (x.innerHTML === "dark") {
+    x.innerHTML = "light";
+  } else {
+    x.innerHTML = "dark";
+  }
+
+  if (x.innerHTML === "light") {
+    x.style.color = "black";}
+  else {
+  x.style.color = "white";;
+  }
+  
+}
+
+function changeThemePic() {
+  var y = document.getElementById("theme-pic");
+
+  if (y.src.match("/images/tc1.png")) {
+    y.src = "/images/tc2.png";
+  } else {
+    y.src="/images/tc1.png";
+  }
+  
+}
+  
+
+</script>
+</body>
+</html>

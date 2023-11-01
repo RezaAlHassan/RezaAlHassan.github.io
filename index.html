@@ -62,7 +62,9 @@
 
         </div>
         <div class="col-5">
-          <img id="profile-picture" src="/images/IMG_5684.jpg" alt="Avatar">
+          <img id="abs" src="/images/abs_line_dark.png" alt="Avatar">
+          <img id="profile-picture" src="/images/IMG_20220101_210041_782.png" alt="Avatar">
+          
         </div>
       </div>
       </div>
@@ -115,6 +117,7 @@ function changeThemePic() {
   var wh = document.getElementById("wh");
   var ln = document.getElementById("ln");
   var gl = document.getElementById("gl");
+  var abs = document.getElementById("abs");
 
   if (tl.src.match("/images/telegram_dt.png")){
     tl.src = "/images/telegram_white_theme.png";
@@ -143,55 +146,16 @@ function changeThemePic() {
     else {
       gl.src = "/images/gle_dt.png";
     }
+
+    if (abs.src.match("/images/abs_line_dark.png")){
+    abs.src = "/images/abs_line_white.png";
+  }
+    else {
+      abs.src = "/images/abs_line_dark.png";
+    }
   
 }
   
-
-
-
-
-  
-
-
-  //body
-  //var tl = document.getElementById("tl");
-  //var wh = document.getElementById('wh');
-  //var ln = document.getElementById('ln');
-  //var gl = document.getElementById('gl');
-
-  /*//change toggler
-  if (x.innerHTML === "dark" && 
-  y.src.match("/images/tc1.png") &&
-  tl.src.match("/images/telegram_dt.png") &&
-  wh.src.match("/images/whatsapp_dark_theme") &&
-  ln.src.match("/images/ln_dt.png") &&
-  gl.src.match("/images/gle_dt.png")  
-  ) {
-    x.innerHTML = "light";
-    y.src="/images/tc2.png";
-    z.classList="light-mode";
-    li_one.classList.toggle("light-mode-text");
-    li_two.classList.toggle("light-mode-text");
-    li_three.classList.toggle("light-mode-text");
-    theme_text.classList.toggle("light-mode-text");
-    //li_active.classList.toggle("light-mode-active");
-    li_active.classList.remove('active');
-    li_active.classList.add('light-mode-active');
-    tl.src="/images/telegram_white_theme.png";
-    wh.src="/images/WhatsApp_wt.png";
-    ln.src="/images/LinkedIN_wt.png";
-    gl.src="/images/Google_wt.png";
-
-  } else {
-    x.innerHTML = "dark";
-    y.src="/images/tc1.png";
-    z.classList="light-mode";
-    tl.src="/images/telegram_dt.png";
-    wh.src="/images/whatsapp_dark_theme";
-    ln.src="/images/ln_dt.png" ;
-    gl.src="/images/gle_dt.png";
-  }
-  */
 
 </script>
 </body>
