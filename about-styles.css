@@ -1,0 +1,164 @@
+
+body {
+    background-color: #1e1e1e;
+    color:white;
+    overflow: hidden;
+    font-family:"OCR A Extended" ;
+  }
+
+.light-mode {
+    background-color: white;
+    color:#1e1e1e;
+  
+  }
+
+a{
+    text-decoration:none;
+  }
+  
+.light-mode-active {
+    background-color: #1e1e1e;
+    color:white;
+    box-sizing:border-box;
+    font-size: 30px;
+  }
+
+  /* Nav */
+.active { 
+    background-color: white;
+    color:#1e1e1e;
+    box-sizing:border-box;
+    font-size: 30px;
+    padding: 2px;
+}
+
+.nav-link{
+    font-family:"OCR A Extended" ;
+    letter-spacing: -0.15em;
+    font-size: 30px;
+    line-height: 32px;
+    text-decoration:none;
+}
+.nav-link:hover{
+ color: rgb(235, 163, 8);
+}
+
+#link-active:hover{
+  color: rgb(235, 163, 8);
+}
+
+.logo-text {
+    font-family: "Reenie Beanie";
+    font-size: 2em;
+}
+
+.logo-picture {
+    font-family: "Reenie Beanie";
+    font-size: 2em;
+}
+
+.logo-picture {
+margin-right: 0.5em;
+}
+
+.theme-toggle {
+    --size: 2rem;
+    
+    background: none;
+    border: none;
+    padding: 0;
+  
+    inline-size: var(--size);
+    block-size: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    
+  }
+
+  .theme-toggle{
+    margin-bottom: 1em;
+    margin-right: 1em;
+  }
+
+  .theme-text{
+    font-family: "OCR A Extended";
+    letter-spacing: -0.15em;
+    color: white;
+  }
+
+
+ /* main body */
+  .title-main{
+    font-family:"OCR A Extended" ;
+    letter-spacing: -0.15em;
+    font-size: 5em;
+    line-height: 32px;
+  }
+
+  .project-details{
+    margin-top:70px;
+  }
+  
+  .project-title{
+    font-family:"OCR A Extended" ;
+    letter-spacing: -0.15em;
+    font-size: 3em;
+  }
+
+  .project-title:hover{
+    color:rgb(255, 184, 30); 
+  }
+
+  .content-text{
+    font-family: "OCR A Extended";
+    font-size: 30px;
+    letter-spacing: -0.15em;
+    padding-top: 2em;
+  }
+
+  .project-text{
+    font-family: "OCR A Extended";
+    font-size: 30px;
+    letter-spacing: -0.15em;
+  }
+
+  .cont-pos{
+    position: relative;
+    top:8em;
+  }
+
+  .inquiries-text{
+    font-family:"OCR A Extended" ;
+    letter-spacing: -0.15em;
+    font-weight: lighter;
+    font-size: 2em;
+    line-height: 32px;
+  }
+
+  .inquiries-img{
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    transition: transform .2s;
+    cursor: pointer;
+  }
+  .inquiries-img:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .inquiries-box{
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 0.2px solid #575757;
+  }
+
+  #profile-picture{
+    position: absolute;
+    width: 50%;
+  }
+  
+  #abs{
+    top:-120px;
+    position: absolute;
+    left:580px;
+  }
