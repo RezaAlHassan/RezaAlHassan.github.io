@@ -107,13 +107,23 @@ margin-right: 0.5em;
     color: white;
   }
 
+  .pro-title:hover{
+    font-family:"OCR A Extended" ;
+    letter-spacing: -0.15em;
+    font-size: 3em;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(235, 163, 8);
+  }
+
+
   .project-title-white{
     font-family:"OCR A Extended" ;
     letter-spacing: -0.15em;
     font-size: 3em;
     text-decoration: underline;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: #1e1e1e;
   }
 
   .content-text{

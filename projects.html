@@ -18,7 +18,7 @@
   
           <div class="collapse navbar-collapse justify-content-md-around" id="navbarsExample10">
                 <div class="d-flex flex-row mb-3">
-                  <a  class="hvr-underline-from-center nav-link mx-2  " href="#">home</a>
+                  <a  class="hvr-underline-from-center nav-link mx-2  " href="/index">home</a>
                   <a id="link-active" class="nav-link active px-2 mx-2 rounded-0 " href="#">projects</a>
                   <a class=" nav-link mx-3" href="#">design</a>
                   <a class=" nav-link mx-2 " href="#">about</a>  
@@ -43,16 +43,28 @@
        <div class="row">
          <div class="col-10">
             <div class="project-details">
-            <a href="#" class="pro-title project-title-dark">AQM: Air Quality Monitoring</a>
+            <a href="https://github.com/RezaAlHassan/aqm-laravel#readme" class="pro-title project-title-dark">AQM: Air Quality Monitoring</a>
             <p class="project-text">An air quality monitoring software that uses everyday air quality data (stored in database), 
                 computes it and shows it in user friendly charts and a dashboard.  </p>
             </div>
 
             <div class="project-details">
-                <a href="#" class="pro-title project-title-dark">Artroot</a>
+                <a href="https://github.com/RezaAlHassan/artroot-laravel#readme" class="pro-title project-title-dark">Artroot: A platform for artists</a>
                 <p class="project-text">A fully customised platform for artists where they can showcase their art and interact with potential buyers, 
                     with accounts for different user types. Constructed implenting a rigorous authentication system.  </p>
             </div>
+
+            <div class="project-details">
+              <a href="https://github.com/RezaAlHassan/reaction-timer-game#readme" class="pro-title project-title-dark">Vue Reaction Timer</a>
+              <p class="project-text">A reaction timer game that tests your reaction speed and gives comments based on how fast you were</p>
+          </div>
+
+          <div class="project-details">
+            <a href="https://github.com/RezaAlHassan/Goodbuy-laravel#readme" class="pro-title project-title-dark">Goodbuy</a>
+            <p class="project-text">Full Fledged Ecommerce with login, registration, admin panel, cart, checkout and billing (payment gateway).
+               Admins can CRUD products, sliders, create catgories and view orders. (Laravel 8)</p>
+        </div>
+
         </div>
        </div>
 <br><br>
@@ -81,15 +93,19 @@ function bodyThemeChange() {
 }
 
 function titleThemeChange() {
-  var li_active = document.getElementsByClassName('pro-title');
-  if (li_active.classList.contains("project-title-dark")) {
-    li_active.classList.remove("project-title-dark");
-    li_active.classList.add("project-title-white");
-} else {
-   li_active.classList.add("project-title-dark");
-   li_active.classList.remove("project-title-white");
-} 
+  var titles = document.getElementsByClassName('pro-title');
+
+  for (var i = 0; i < titles.length; i++) {
+    if (titles[i].classList.contains("project-title-dark")) {
+      titles[i].classList.remove("project-title-dark");
+      titles[i].classList.add("project-title-white");
+    } else {
+      titles[i].classList.remove("project-title-white");
+      titles[i].classList.add("project-title-dark");
+    }
+  }
 }
+
 
 function activeLinkThemeChange() {
   var li_active = document.getElementById('link-active');
